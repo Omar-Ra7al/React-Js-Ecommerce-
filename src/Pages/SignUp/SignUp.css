@@ -1,0 +1,69 @@
+.section.signUp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px 0 20px;
+
+  /* Img >>  */
+  .signup-image {
+    max-width: 50%;
+    height: auto;
+  }
+  @media (max-width: 790px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    .signup-image {
+      max-width: 90%;
+    }
+  }
+
+  /* Form >> */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+
+    .create-account-btn,
+    .google-signup-btn {
+      width: 100%;
+    }
+
+    .google-signup-btn {
+      color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+    .create-account-btn {
+      background-color: var(--secondary-color);
+    }
+
+    .divider {
+      width: 100%;
+    }
+
+    /* Login  >>  */
+    .login-btn {
+      text-transform: none;
+    }
+    /* Buttons >> */
+    .login-forget {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .login {
+        width: 143px;
+        height: 56px;
+      }
+      .forget {
+        color: var(--secondary-color) !important;
+        width: fit-content;
+      }
+    }
+  }
+}

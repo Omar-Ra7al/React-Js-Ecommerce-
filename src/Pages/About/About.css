@@ -1,0 +1,87 @@
+.about {
+  .about-welcome {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    @media (max-width: 1100px) {
+      justify-content: center;
+      text-align: center;
+    }
+    .descripe {
+      max-width: 425px;
+    }
+    .welcome-img-holder {
+      max-width: 600px;
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .section.services {
+    border-bottom: 0;
+    padding: 0;
+  }
+  .icon-box {
+    margin: 60px 0;
+    gap: 10px !important;
+    width: 270px !important;
+    height: 230px !important;
+
+    p {
+      font-weight: bold;
+    }
+  }
+  .icon-box.red {
+    .rounded-box {
+      border: 10px solid #00000040;
+      background-color: var(--secondary-bg) !important;
+    }
+
+    svg {
+      color: var(--primary-color) !important;
+    }
+  }
+
+  /* Card Container  */
+  .card-container {
+    margin-bottom: 60px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 790px) {
+      justify-content: center;
+    }
+    .card {
+      width: 370px;
+      border-radius: 4px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .img-container {
+        background-color: var(--secondary-bg);
+        height: 430px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        img {
+          max-width: 100%;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+      svg {
+        font-size: 20px;
+        margin: 10px 10px 0 0;
+      }
+    }
+  }
+}

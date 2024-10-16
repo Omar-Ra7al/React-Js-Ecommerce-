@@ -1,0 +1,186 @@
+.product-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+
+  .body-details {
+    /*  << Start Product Details */
+    flex: 1;
+    .product-details {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border-bottom: 3px solid var(--secondary-bg);
+      padding-bottom: 20px;
+      /* Product Title >> */
+      .product-title {
+        font-weight: bold;
+        font-size: 24px;
+      }
+      /* Rate >>  */
+      display: flex;
+      .rate {
+        gap: 10px;
+        svg {
+          color: #ffad33;
+        }
+        span {
+          color: var(--sec-text-color);
+        }
+      }
+    }
+    /* End Product Details //>> */
+
+    /* << Start Product Actions  */
+    .product-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+      .product-quantity {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 160px;
+        height: 44px;
+        overflow: hidden;
+        border-radius: 4px;
+        border: 1px solid #00000080;
+
+        p {
+          font-size: 18px;
+        }
+        button {
+          height: 44px;
+          min-width: 41px;
+          font-size: 24px;
+          padding: 0;
+          border-radius: 0;
+        }
+        button:first-child {
+          border-right: 1px solid #00000080;
+          background-color: transparent;
+          color: var(--main-color);
+        }
+        button:last-child {
+          background-color: var(--secondary-color);
+          border-left: 1px solid #00000080;
+        }
+      }
+      .buy-now {
+        background-color: var(--secondary-color);
+        width: 160px;
+        height: 44px;
+        border-radius: 4px;
+      }
+      .wish {
+        border: 1px solid #00000080;
+        border-radius: 4px;
+        height: 44px;
+      }
+      .wish.inwish {
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        border-color: var(--secondary-color);
+      }
+    }
+    /* End Product Actions // >> */
+    /* << Start Shipping */
+    .shipping {
+      border: 1px solid #00000080;
+      margin-top: 20px;
+      border-radius: 4px;
+      .shipping-details {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+        justify-content: start;
+        .shipping-title {
+          font-weight: bold;
+        }
+        svg {
+          font-size: 35px;
+        }
+        &:first-child {
+          border-bottom: 1px solid #00000080;
+        }
+      }
+    }
+    /* End Shipping //>> */
+  }
+
+  .product-imgs-container {
+    display: flex;
+    gap: 20px;
+
+    .lef-imgs-wrapper {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .img-wrapper {
+        width: 170px;
+        height: 138px;
+        img {
+          max-width: 100%;
+          max-height: 90%;
+          object-fit: contain;
+        }
+      }
+    }
+    .img-wrapper,
+    .main-img {
+      background-color: var(--secondary-bg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      img {
+        max-width: 80%;
+        min-width: 70%;
+        max-height: 80%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+
+    .main-img {
+      width: 450px;
+      height: 600px;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .product-body {
+    text-align: center;
+    .rate {
+      justify-content: center;
+    }
+  }
+  .product-actions {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center !important;
+  }
+  .product-imgs-container {
+    height: fit-content;
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+    .main-img {
+      height: 300px !important;
+    }
+    .lef-imgs-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: row !important;
+      gap: 20px;
+    }
+  }
+}

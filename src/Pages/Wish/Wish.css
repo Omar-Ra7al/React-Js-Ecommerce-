@@ -1,0 +1,14 @@
+.details {
+  .d-title {
+    font-size: 20px;
+    color: var(--main-color);
+  }
+  .slide-icons {
+    button {
+      color: var(--main-color);
+      border-color: var(--main-color);
+      font-weight: bold;
+      font-size: var(--font-size) !important;
+    }
+  }
+}
