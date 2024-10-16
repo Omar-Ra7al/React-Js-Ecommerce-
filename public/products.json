@@ -3,12 +3,12 @@
     "id": 1,
     "name": "iPhone 16 Pro Max",
     "description": "**iPhone 16 Pro Max**: A cutting-edge smartphone with advanced performance, stunning display, and professional-grade camera system for an exceptional mobile experience.",
-    "mainImg": "../src/assets/Products/iphone1.png",
+    "mainImg": "/src/assets/Products/iphone1.png",
     "imgs": [
-      "../src/assets/Products/iphone1.png",
-      "../src/assets/Products/iphone2.png",
-      "../src/assets/Products/iphone3.png",
-      "../src/assets/Products/iphone1.png"
+      "/src/assets/Products/iphone1.png",
+      "/src/assets/Products/iphone2.png",
+      "/src/assets/Products/iphone3.png",
+      "/src/assets/Products/iphone1.png"
     ],
     "price": 123.0,
     "count": 9,
@@ -23,12 +23,12 @@
     "id": 2,
     "name": "HP Spectre x360 Laptop",
     "description": "A high-performance laptop with a sleek design, featuring a powerful Intel processor, 16GB RAM, and a 512GB SSD.",
-    "mainImg": "../src/assets/Products/lap3.png",
+    "mainImg": "/src/assets/Products/lap3.png",
     "imgs": [
-      "../src/assets/Products/lap1.png",
-      "../src/assets/Products/lap2.png",
-      "../src/assets/Products/lap3.png",
-      "../src/assets/Products/lap1.png"
+      "/src/assets/Products/lap1.png",
+      "/src/assets/Products/lap2.png",
+      "/src/assets/Products/lap3.png",
+      "/src/assets/Products/lap1.png"
     ],
     "price": 1299.99,
     "count": 50,
@@ -44,12 +44,12 @@
     "id": 8,
     "name": "Beats",
     "description": "Eco-friendly yoga mat with non-slip surface.",
-    "mainImg": "../src/assets/Products/beats.png",
+    "mainImg": "/src/assets/Products/beats.png",
     "imgs": [
-      "../src/assets/Products/airpods.png",
-      "../src/assets/Products/beats.png",
-      "../src/assets/Products/airpods.png",
-      "../src/assets/Products/beats.png"
+      "/src/assets/Products/airpods.png",
+      "/src/assets/Products/beats.png",
+      "/src/assets/Products/airpods.png",
+      "/src/assets/Products/beats.png"
     ],
     "price": 25.0,
     "count": 120,
@@ -65,12 +65,12 @@
     "id": 10,
     "name": "Hoody",
     "description": "Comfortable and stylish hoody for casual wear.",
-    "mainImg": "../src/assets/Products/hoody1.png",
+    "mainImg": "/src/assets/Products/hoody1.png",
     "imgs": [
-      "../src/assets/Products/hoody1.png",
-      "../src/assets/Products/hoody2.png",
-      "../src/assets/Products/hoody1.png",
-      "../src/assets/Products/hoody2.png"
+      "/src/assets/Products/hoody1.png",
+      "/src/assets/Products/hoody2.png",
+      "/src/assets/Products/hoody1.png",
+      "/src/assets/Products/hoody2.png"
     ],
     "price": 49.99,
     "count": 100,
@@ -85,12 +85,12 @@
     "id": 11,
     "name": "Gaming Keyboard",
     "description": "High-performance gaming keyboard with customizable RGB lighting.",
-    "mainImg": "../src/assets/Products/keyboard2.png",
+    "mainImg": "/src/assets/Products/keyboard2.png",
     "imgs": [
-      "../src/assets/Products/keyboard2.png",
-      "../src/assets/Products/keyboard3.png",
-      "../src/assets/Products/keyboard.png",
-      "../src/assets/Products/keyboard2.png"
+      "/src/assets/Products/keyboard2.png",
+      "/src/assets/Products/keyboard3.png",
+      "/src/assets/Products/keyboard.png",
+      "/src/assets/Products/keyboard2.png"
     ],
     "price": 15.99,
     "count": 200,
@@ -105,12 +105,12 @@
     "id": 7,
     "name": "Airpods Pro",
     "description": "High-quality wireless earphones with superior sound and noise cancellation for an immersive experience.",
-    "mainImg": "../src/assets/Products/airpods.png",
+    "mainImg": "/src/assets/Products/airpods.png",
     "imgs": [
-      "../src/assets/Products/airpods.png",
-      "../src/assets/Products/beats.png",
-      "../src/assets/Products/airpods.png",
-      "../src/assets/Products/beats.png"
+      "/src/assets/Products/airpods.png",
+      "/src/assets/Products/beats.png",
+      "/src/assets/Products/airpods.png",
+      "/src/assets/Products/beats.png"
     ],
     "price": 29.99,
     "count": 150,
@@ -125,12 +125,12 @@
     "id": 15,
     "name": "Pant",
     "description": "Licensed Mercedes-Benz ride-on car for kids.",
-    "mainImg": "../src/assets/Products/pant.png",
+    "mainImg": "/src/assets/Products/pant.png",
     "imgs": [
-      "../src/assets/Products/pant.png",
-      "../src/assets/Products/jeans.png",
-      "../src/assets/Products/pant.png",
-      "../src/assets/Products/pant.png"
+      "/src/assets/Products/pant.png",
+      "/src/assets/Products/jeans.png",
+      "/src/assets/Products/pant.png",
+      "/src/assets/Products/pant.png"
     ],
     "price": 249.99,
     "count": 50,
@@ -145,12 +145,12 @@
     "id": 16,
     "name": "Women Bag",
     "description": "Licensed Mercedes-Benz ride-on car for kids.",
-    "mainImg": "../src/assets/Products/womenbag.png",
+    "mainImg": "/src/assets/Products/womenbag.png",
     "imgs": [
-      "../src/assets/Products/womenbag.png",
-      "../src/assets/Products/womenbag1.png",
-      "../src/assets/Products/womenbag.png",
-      "../src/assets/Products/womenbag1.png"
+      "/src/assets/Products/womenbag.png",
+      "/src/assets/Products/womenbag1.png",
+      "/src/assets/Products/womenbag.png",
+      "/src/assets/Products/womenbag1.png"
     ],
     "price": 249.99,
     "count": 50,
@@ -165,12 +165,12 @@
     "id": 21,
     "name": "Sportshoose Ride-On",
     "description": "Licensed Mercedes-Benz ride-on car for kids.",
-    "mainImg": "../src/assets/Products/sportshoose2.png",
+    "mainImg": "/src/assets/Products/sportshoose2.png",
     "imgs": [
-      "../src/assets/Products/sportshoose.png",
-      "../src/assets/Products/sportshoose2.png",
-      "../src/assets/Products/sportshoose.png",
-      "../src/assets/Products/sportshoose2.png"
+      "/src/assets/Products/sportshoose.png",
+      "/src/assets/Products/sportshoose2.png",
+      "/src/assets/Products/sportshoose.png",
+      "/src/assets/Products/sportshoose2.png"
     ],
     "price": 249.99,
     "count": 50,
@@ -185,11 +185,11 @@
     "id": 22,
     "name": "Mercedes Ride-On Car",
     "description": "Licensed Mercedes-Benz ride-on car for kids.",
-    "mainImg": "../src/assets/Products/kidstoy.png",
+    "mainImg": "/src/assets/Products/kidstoy.png",
     "imgs": [
-      "../src/assets/Products/kidstoy.png",
-      "../src/assets/Products/kidstoy.png",
-      "../src/assets/Products/kidstoy.png"
+      "/src/assets/Products/kidstoy.png",
+      "/src/assets/Products/kidstoy.png",
+      "/src/assets/Products/kidstoy.png"
     ],
     "price": 249.99,
     "count": 50,
@@ -204,12 +204,12 @@
     "id": 12,
     "name": "JBL Speaker",
     "description": "High-quality Bluetooth speaker with rich sound.",
-    "mainImg": "../src/assets/Products/Jbl.png",
+    "mainImg": "/src/assets/Products/Jbl.png",
     "imgs": [
-      "../src/assets/Products/Jbl.png",
-      "../src/assets/Products/beats.png",
-      "../src/assets/Products/Jbl.png",
-      "../src/assets/Products/airpods.png"
+      "/src/assets/Products/Jbl.png",
+      "/src/assets/Products/beats.png",
+      "/src/assets/Products/Jbl.png",
+      "/src/assets/Products/airpods.png"
     ],
     "price": 85.99,
     "count": 150,
@@ -224,12 +224,12 @@
     "id": 18,
     "name": "Women Shoes",
     "description": "Licensed Mercedes-Benz ride-on car for kids.",
-    "mainImg": "../src/assets/Products/womenshose.png",
+    "mainImg": "/src/assets/Products/womenshose.png",
     "imgs": [
-      "../src/assets/Products/womenbag.png",
-      "../src/assets/Products/womenbag1.png",
-      "../src/assets/Products/womenbag.png",
-      "../src/assets/Products/womenbag1.png"
+      "/src/assets/Products/womenbag.png",
+      "/src/assets/Products/womenbag1.png",
+      "/src/assets/Products/womenbag.png",
+      "/src/assets/Products/womenbag1.png"
     ],
     "price": 249.99,
     "count": 50,
@@ -244,12 +244,12 @@
     "id": 19,
     "name": "Mercedes Ride-On Car",
     "description": "Licensed Mercedes-Benz ride-on car for kids.",
-    "mainImg": "../src/assets/Products/womenhijab.png",
+    "mainImg": "/src/assets/Products/womenhijab.png",
     "imgs": [
-      "../src/assets/Products/womenhijab",
-      "../src/assets/Products/womenhijab",
-      "../src/assets/Products/womenhijab",
-      "../src/assets/Products/womenhijab"
+      "/src/assets/Products/womenhijab",
+      "/src/assets/Products/womenhijab",
+      "/src/assets/Products/womenhijab",
+      "/src/assets/Products/womenhijab"
     ],
     "price": 249.99,
     "count": 50,
@@ -264,12 +264,12 @@
     "id": 20,
     "name": "Sportshoose Ride-On",
     "description": "Licensed Mercedes-Benz ride-on car for kids.",
-    "mainImg": "../src/assets/Products/sportshoose.png",
+    "mainImg": "/src/assets/Products/sportshoose.png",
     "imgs": [
-      "../src/assets/Products/sportshoose.png",
-      "../src/assets/Products/sportshoose2.png",
-      "../src/assets/Products/sportshoose.png",
-      "../src/assets/Products/sportshoose2.png"
+      "/src/assets/Products/sportshoose.png",
+      "/src/assets/Products/sportshoose2.png",
+      "/src/assets/Products/sportshoose.png",
+      "/src/assets/Products/sportshoose2.png"
     ],
     "price": 249.99,
     "count": 50,
@@ -284,12 +284,12 @@
     "id": 3,
     "name": "iPhone 16 Pro Max",
     "description": "**iPhone 16 Pro Max**: A cutting-edge smartphone with advanced performance, stunning display, and professional-grade camera system for an exceptional mobile experience.",
-    "mainImg": "../src/assets/Products/iphone2.png",
+    "mainImg": "/src/assets/Products/iphone2.png",
     "imgs": [
-      "../src/assets/Products/iphone1.png",
-      "../src/assets/Products/iphone2.png",
-      "../src/assets/Products/iphone3.png",
-      "../src/assets/Products/iphone1.png"
+      "/src/assets/Products/iphone1.png",
+      "/src/assets/Products/iphone2.png",
+      "/src/assets/Products/iphone3.png",
+      "/src/assets/Products/iphone1.png"
     ],
     "price": 89.0,
     "count": 75,
@@ -304,12 +304,12 @@
     "id": 5,
     "name": "iPhone 16 Pro Max",
     "description": "**iPhone 16 Pro Max**: A cutting-edge smartphone with advanced performance, stunning display, and professional-grade camera system for an exceptional mobile experience.",
-    "mainImg": "../src/assets/Products/iphone3.png",
+    "mainImg": "/src/assets/Products/iphone3.png",
     "imgs": [
-      "../src/assets/Products/iphone1.png",
-      "../src/assets/Products/iphone2.png",
-      "../src/assets/Products/iphone3.png",
-      "../src/assets/Products/iphone1.png"
+      "/src/assets/Products/iphone1.png",
+      "/src/assets/Products/iphone2.png",
+      "/src/assets/Products/iphone3.png",
+      "/src/assets/Products/iphone1.png"
     ],
     "price": 65.0,
     "count": 200,
@@ -324,12 +324,12 @@
     "id": 6,
     "name": "Electric Kettle",
     "description": "A high-performance electric kettle for fast and efficient boiling, featuring stainless steel construction.",
-    "mainImg": "../src/assets/Products/lap1.png",
+    "mainImg": "/src/assets/Products/lap1.png",
     "imgs": [
-      "../src/assets/Products/lap1.png",
-      "../src/assets/Products/lap2.png",
-      "../src/assets/Products/lap3.png",
-      "../src/assets/Products/lap1.png"
+      "/src/assets/Products/lap1.png",
+      "/src/assets/Products/lap2.png",
+      "/src/assets/Products/lap3.png",
+      "/src/assets/Products/lap1.png"
     ],
     "price": 34.99,
     "count": 80,
@@ -344,12 +344,12 @@
     "id": 9,
     "name": "Keyboard",
     "description": "Soft and cuddly teddy bear for children.",
-    "mainImg": "../src/assets/Products/keyboard.png",
+    "mainImg": "/src/assets/Products/keyboard.png",
     "imgs": [
-      "../src/assets/Products/keyboard2.png",
-      "../src/assets/Products/keyboard3.png",
-      "../src/assets/Products/keyboard.png",
-      "../src/assets/Products/keyboard2.png"
+      "/src/assets/Products/keyboard2.png",
+      "/src/assets/Products/keyboard3.png",
+      "/src/assets/Products/keyboard.png",
+      "/src/assets/Products/keyboard2.png"
     ],
     "price": 19.99,
     "count": 200,
@@ -364,12 +364,12 @@
     "id": 14,
     "name": "Hoody",
     "description": "Licensed Mercedes-Benz ride-on car for kids.",
-    "mainImg": "../src/assets/Products/hoody2.png",
+    "mainImg": "/src/assets/Products/hoody2.png",
     "imgs": [
-      "../src/assets/Products/hoody1.png",
-      "../src/assets/Products/hoody2.png",
-      "../src/assets/Products/hoody1.png",
-      "../src/assets/Products/hoody2.png"
+      "/src/assets/Products/hoody1.png",
+      "/src/assets/Products/hoody2.png",
+      "/src/assets/Products/hoody1.png",
+      "/src/assets/Products/hoody2.png"
     ],
     "price": 249.99,
     "count": 50,
@@ -385,12 +385,12 @@
     "id": 17,
     "name": "Women Bag",
     "description": "Licensed Mercedes-Benz ride-on car for kids.",
-    "mainImg": "../src/assets/Products/womenbag1.png",
+    "mainImg": "/src/assets/Products/womenbag1.png",
     "imgs": [
-      "../src/assets/Products/womenbag.png",
-      "../src/assets/Products/womenbag1.png",
-      "../src/assets/Products/womenbag.png",
-      "../src/assets/Products/womenbag1.png"
+      "/src/assets/Products/womenbag.png",
+      "/src/assets/Products/womenbag1.png",
+      "/src/assets/Products/womenbag.png",
+      "/src/assets/Products/womenbag1.png"
     ],
     "price": 249.99,
     "count": 50,
@@ -406,12 +406,12 @@
     "id": 4,
     "name": "HP Spectre x360 Laptop",
     "description": "A high-performance laptop with a sleek design, featuring a powerful Intel processor, 16GB RAM, and a 512GB SSD.",
-    "mainImg": "../src/assets/Products/lap2.png",
+    "mainImg": "/src/assets/Products/lap2.png",
     "imgs": [
-      "../src/assets/Products/lap1.png",
-      "../src/assets/Products/lap2.png",
-      "../src/assets/Products/lap3.png",
-      "../src/assets/Products/lap1.png"
+      "/src/assets/Products/lap1.png",
+      "/src/assets/Products/lap2.png",
+      "/src/assets/Products/lap3.png",
+      "/src/assets/Products/lap1.png"
     ],
     "price": 45.99,
     "count": 120,
@@ -427,12 +427,12 @@
     "id": 13,
     "name": "Gaming Keyboard",
     "description": "High-performance gaming headphones with surround sound.",
-    "mainImg": "../src/assets/Products/keyboard3.png",
+    "mainImg": "/src/assets/Products/keyboard3.png",
     "imgs": [
-      "../src/assets/Products/keyboard2.png",
-      "../src/assets/Products/keyboard3.png",
-      "../src/assets/Products/keyboard.png",
-      "../src/assets/Products/keyboard2.png"
+      "/src/assets/Products/keyboard2.png",
+      "/src/assets/Products/keyboard3.png",
+      "/src/assets/Products/keyboard.png",
+      "/src/assets/Products/keyboard2.png"
     ],
     "price": 120.99,
     "count": 95,
@@ -447,11 +447,11 @@
     "id": 23,
     "name": "Bike Ride-On",
     "description": "Licensed Mercedes-Benz ride-on car for kids.",
-    "mainImg": "../src/assets/Products/bike.png",
+    "mainImg": "/src/assets/Products/bike.png",
     "imgs": [
-      "../src/assets/Products/electro.jpg",
-      "../src/assets/Products/electro.jpg",
-      "../src/assets/Products/electro.jpg"
+      "/src/assets/Products/electro.jpg",
+      "/src/assets/Products/electro.jpg",
+      "/src/assets/Products/electro.jpg"
     ],
     "price": 249.99,
     "count": 50,
