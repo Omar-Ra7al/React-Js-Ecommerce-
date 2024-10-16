@@ -30,12 +30,13 @@ import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 // Images
-import HomeImg from "../../assets/Images/Home/iphone14.png";
-import Jbl from "../../assets/Images/Home/Jbl.png";
-import Ps5 from "../../assets/Images/Home/ps5-slim.png";
-import Women from "../../assets/Images/Home/women.png";
-import Gucci from "../../assets/Images/Home/Gucci.png";
-import Amazon from "../../assets/Images/Home/amazon.png";
+import HomeImg from "../../../public/assets/Images/Home/iphone14.png";
+// import HomeImg from "../../../public/assets/Images/Home/iphone14.png";
+import Jbl from "../../../public/assets/Images/Home/Jbl.png";
+import Ps5 from "../../../public/assets/Images/Home/ps5-slim.png";
+import Women from "../../../public/assets/Images/Home/women.png";
+import Gucci from "../../../public/assets/Images/Home/Gucci.png";
+import Amazon from "../../../public/assets/Images/Home/amazon.png";
 
 // React Router
 import { Link } from "react-router-dom";

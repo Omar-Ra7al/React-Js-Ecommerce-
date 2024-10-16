@@ -1,5 +1,5 @@
 import { Container } from "@mui/system";
-import SingupImg from "../../assets/Images/Home/Signup.png";
+import SingupImg from "../../../public/assets/Images/Home/Signup.png";
 import { Box, TextField, Button, Typography } from "@mui/material";
 import "./SignUp.css";
 import { useDispatch } from "react-redux";

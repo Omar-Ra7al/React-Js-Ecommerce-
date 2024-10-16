@@ -1,9 +1,9 @@
 import { Box, Typography, Grid, IconButton, Container } from "@mui/material";
 import { Facebook, Instagram, WhatsApp, LinkedIn } from "@mui/icons-material";
 import SendIcon from "@mui/icons-material/Send";
-import qr from "../../assets/Images/Home/Qr Code.png";
-import iphone from "../../assets/Images/Home/download-appstore.png";
-import googleplay from "../../assets/Images/Home/google-play-store-logo-.png";
+import qr from "../../../public/assets/Images/Home/Qr Code.png";
+import iphone from "../../../public/assets/Images/Home/download-appstore.png";
+import googleplay from "../../../public/assets/Images/Home/google-play-store-logo-.png";
 import "./Footer.css";
 export default function Footer() {
   return (

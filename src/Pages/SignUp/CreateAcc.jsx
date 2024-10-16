@@ -9,8 +9,8 @@ import {
 } from "@mui/material";
 import GoogleIcon from "@mui/icons-material/Google";
 
-// Assets
-import SingupImg from "../../assets/Images/Home/Signup.png";
+// public/assets
+import SingupImg from "../../../public/assets/Images/Home/Signup.png";
 
 // CSS
 import "./SignUp.css";

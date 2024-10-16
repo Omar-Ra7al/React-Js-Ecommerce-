@@ -14,9 +14,9 @@ import StorefrontIcon from "@mui/icons-material/Storefront";
 import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
 
 // Imgs >>
-import cartImg from "../../assets/Images/Home/Signup.png";
-import person1 from "../../assets/Images/Home/Frame 874.png";
-import person2 from "../../assets/Images/Home/image 47.png";
+import cartImg from "../../../public/assets/Images/Home/Signup.png";
+import person1 from "../../../public/assets/Images/Home/Frame 874.png";
+import person2 from "../../../public/assets/Images/Home/image 47.png";
 
 export default function AboutUs() {
   return (
