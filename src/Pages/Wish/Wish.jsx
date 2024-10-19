@@ -73,7 +73,7 @@ export default function Wish() {
         <Box key={item.id} className="product">
           {/* ________________________________________________ */}
           <Box className="img-wrappere">
-            <img src={`${item.mainImg}`} alt="" />
+            <img src={item.mainImg} alt={item.name} />
 
             <Box className="icons">
               {/* Check if the product include disscount  */}

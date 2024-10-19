@@ -116,7 +116,7 @@ export const productsSlice = createSlice({
       state.cartProducts = newUserQuantity;
     },
     wishTocart: (state) => {
-      state.cartProducts = [state.cartProducts, ...state.wishProducts];
+      state.cartProducts = [...state.cartProducts, ...state.wishProducts];
       // update local storage
       localStorage.setItem("cartProducts", JSON.stringify(state.cartProducts));
     },
