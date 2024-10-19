@@ -6,8 +6,8 @@
     "mainImg": "/assets/Products/iphone1.png",
     "imgs": [
       "/assets/Products/iphone1.png",
+      "/assets/Products/iphone1.png",
       "/assets/Products/iphone2.png",
-      "/assets/Products/iphone3.png",
       "/assets/Products/iphone1.png"
     ],
     "price": 123.0,
@@ -25,9 +25,9 @@
     "description": "A high-performance laptop with a sleek design, featuring a powerful Intel processor, 16GB RAM, and a 512GB SSD.",
     "mainImg": "/assets/Products/lap3.png",
     "imgs": [
+      "/assets/Products/lap3.png",
       "/assets/Products/lap1.png",
       "/assets/Products/lap2.png",
-      "/assets/Products/lap3.png",
       "/assets/Products/lap1.png"
     ],
     "price": 1299.99,
@@ -46,9 +46,9 @@
     "description": "Eco-friendly yoga mat with non-slip surface.",
     "mainImg": "/assets/Products/beats.png",
     "imgs": [
-      "/assets/Products/airpods.png",
       "/assets/Products/beats.png",
       "/assets/Products/airpods.png",
+      "/assets/Products/beats.png",
       "/assets/Products/beats.png"
     ],
     "price": 25.0,
@@ -68,8 +68,8 @@
     "mainImg": "/assets/Products/hoody1.png",
     "imgs": [
       "/assets/Products/hoody1.png",
-      "/assets/Products/hoody2.png",
       "/assets/Products/hoody1.png",
+      "/assets/Products/hoody2.png",
       "/assets/Products/hoody2.png"
     ],
     "price": 49.99,
@@ -88,8 +88,8 @@
     "mainImg": "/assets/Products/keyboard2.png",
     "imgs": [
       "/assets/Products/keyboard2.png",
+      "/assets/Products/keyboard2.png",
       "/assets/Products/keyboard3.png",
-      "/assets/Products/keyboard.png",
       "/assets/Products/keyboard2.png"
     ],
     "price": 15.99,
@@ -108,8 +108,8 @@
     "mainImg": "/assets/Products/airpods.png",
     "imgs": [
       "/assets/Products/airpods.png",
-      "/assets/Products/beats.png",
       "/assets/Products/airpods.png",
+      "/assets/Products/beats.png",
       "/assets/Products/beats.png"
     ],
     "price": 29.99,
@@ -128,8 +128,8 @@
     "mainImg": "/assets/Products/pant.png",
     "imgs": [
       "/assets/Products/pant.png",
-      "/assets/Products/jeans.png",
       "/assets/Products/pant.png",
+      "/assets/Products/jeans.png",
       "/assets/Products/pant.png"
     ],
     "price": 249.99,
@@ -148,8 +148,8 @@
     "mainImg": "/assets/Products/womenbag.png",
     "imgs": [
       "/assets/Products/womenbag.png",
-      "/assets/Products/womenbag1.png",
       "/assets/Products/womenbag.png",
+      "/assets/Products/womenbag1.png",
       "/assets/Products/womenbag1.png"
     ],
     "price": 249.99,
@@ -167,9 +167,9 @@
     "description": "Licensed Mercedes-Benz ride-on car for kids.",
     "mainImg": "/assets/Products/sportshoose2.png",
     "imgs": [
-      "/assets/Products/sportshoose.png",
       "/assets/Products/sportshoose2.png",
       "/assets/Products/sportshoose.png",
+      "/assets/Products/sportshoose2.png",
       "/assets/Products/sportshoose2.png"
     ],
     "price": 249.99,
@@ -207,8 +207,8 @@
     "mainImg": "/assets/Products/Jbl.png",
     "imgs": [
       "/assets/Products/Jbl.png",
-      "/assets/Products/beats.png",
       "/assets/Products/Jbl.png",
+      "/assets/Products/beats.png",
       "/assets/Products/airpods.png"
     ],
     "price": 85.99,
@@ -226,9 +226,9 @@
     "description": "Licensed Mercedes-Benz ride-on car for kids.",
     "mainImg": "/assets/Products/womenshose.png",
     "imgs": [
+      "/assets/Products/womenshose.png",
       "/assets/Products/womenbag.png",
       "/assets/Products/womenbag1.png",
-      "/assets/Products/womenbag.png",
       "/assets/Products/womenbag1.png"
     ],
     "price": 249.99,
@@ -246,7 +246,7 @@
     "description": "Licensed Mercedes-Benz ride-on car for kids.",
     "mainImg": "/assets/Products/womenhijab.png",
     "imgs": [
-      "/assets/Products/womenhijab",
+      "/assets/Products/womenhijab.png",
       "/assets/Products/womenhijab",
       "/assets/Products/womenhijab",
       "/assets/Products/womenhijab"
@@ -267,8 +267,8 @@
     "mainImg": "/assets/Products/sportshoose.png",
     "imgs": [
       "/assets/Products/sportshoose.png",
-      "/assets/Products/sportshoose2.png",
       "/assets/Products/sportshoose.png",
+      "/assets/Products/sportshoose2.png",
       "/assets/Products/sportshoose2.png"
     ],
     "price": 249.99,
@@ -286,9 +286,9 @@
     "description": "**iPhone 16 Pro Max**: A cutting-edge smartphone with advanced performance, stunning display, and professional-grade camera system for an exceptional mobile experience.",
     "mainImg": "/assets/Products/iphone2.png",
     "imgs": [
+      "/assets/Products/iphone2.png",
       "/assets/Products/iphone1.png",
       "/assets/Products/iphone2.png",
-      "/assets/Products/iphone3.png",
       "/assets/Products/iphone1.png"
     ],
     "price": 89.0,
@@ -306,9 +306,9 @@
     "description": "**iPhone 16 Pro Max**: A cutting-edge smartphone with advanced performance, stunning display, and professional-grade camera system for an exceptional mobile experience.",
     "mainImg": "/assets/Products/iphone3.png",
     "imgs": [
+      "/assets/Products/iphone3.png",
       "/assets/Products/iphone1.png",
       "/assets/Products/iphone2.png",
-      "/assets/Products/iphone3.png",
       "/assets/Products/iphone1.png"
     ],
     "price": 65.0,
@@ -327,8 +327,8 @@
     "mainImg": "/assets/Products/lap1.png",
     "imgs": [
       "/assets/Products/lap1.png",
+      "/assets/Products/lap1.png",
       "/assets/Products/lap2.png",
-      "/assets/Products/lap3.png",
       "/assets/Products/lap1.png"
     ],
     "price": 34.99,
@@ -346,9 +346,9 @@
     "description": "Soft and cuddly teddy bear for children.",
     "mainImg": "/assets/Products/keyboard.png",
     "imgs": [
+      "/assets/Products/keyboard.png",
       "/assets/Products/keyboard2.png",
       "/assets/Products/keyboard3.png",
-      "/assets/Products/keyboard.png",
       "/assets/Products/keyboard2.png"
     ],
     "price": 19.99,
@@ -366,9 +366,9 @@
     "description": "Licensed Mercedes-Benz ride-on car for kids.",
     "mainImg": "/assets/Products/hoody2.png",
     "imgs": [
-      "/assets/Products/hoody1.png",
       "/assets/Products/hoody2.png",
       "/assets/Products/hoody1.png",
+      "/assets/Products/hoody2.png",
       "/assets/Products/hoody2.png"
     ],
     "price": 249.99,
@@ -387,9 +387,9 @@
     "description": "Licensed Mercedes-Benz ride-on car for kids.",
     "mainImg": "/assets/Products/womenbag1.png",
     "imgs": [
-      "/assets/Products/womenbag.png",
       "/assets/Products/womenbag1.png",
       "/assets/Products/womenbag.png",
+      "/assets/Products/womenbag1.png",
       "/assets/Products/womenbag1.png"
     ],
     "price": 249.99,
@@ -408,9 +408,9 @@
     "description": "A high-performance laptop with a sleek design, featuring a powerful Intel processor, 16GB RAM, and a 512GB SSD.",
     "mainImg": "/assets/Products/lap2.png",
     "imgs": [
+      "/assets/Products/lap2.png",
       "/assets/Products/lap1.png",
       "/assets/Products/lap2.png",
-      "/assets/Products/lap3.png",
       "/assets/Products/lap1.png"
     ],
     "price": 45.99,
@@ -429,9 +429,9 @@
     "description": "High-performance gaming headphones with surround sound.",
     "mainImg": "/assets/Products/keyboard3.png",
     "imgs": [
+      "/assets/Products/keyboard3.png",
       "/assets/Products/keyboard2.png",
       "/assets/Products/keyboard3.png",
-      "/assets/Products/keyboard.png",
       "/assets/Products/keyboard2.png"
     ],
     "price": 120.99,
@@ -449,7 +449,7 @@
     "description": "Licensed Mercedes-Benz ride-on car for kids.",
     "mainImg": "/assets/Products/bike.png",
     "imgs": [
-      "/assets/Products/electro.jpg",
+      "/assets/Products/bike.png",
       "/assets/Products/electro.jpg",
       "/assets/Products/electro.jpg"
     ],

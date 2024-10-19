@@ -34,7 +34,7 @@ export default function Login() {
 
           <TextField
             fullWidth
-            label="Email or Phone Number"
+            label="johndoe@example.com"
             variant="outlined"
             className="input-field"
             onChange={(e) => {
@@ -43,7 +43,7 @@ export default function Login() {
           />
           <TextField
             fullWidth
-            label="Password"
+            label="Password123"
             type="password"
             variant="outlined"
             className="input-field"

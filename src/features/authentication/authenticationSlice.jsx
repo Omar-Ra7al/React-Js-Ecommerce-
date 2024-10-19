@@ -39,19 +39,28 @@ export const authenticationSlice = createSlice({
       }
     },
     submitGetStarted: (state, action) => {
+      const { name, email, password } = state.userData;
+
+      // Regular expressions for validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email format
+      const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/; // Password must contain at least 8 characters, 1 digit, 1 lowercase, and 1 uppercase
+
+      // Validation check
       if (
-        state.userData.name &&
-        state.userData.email &&
-        state.userData.password.currentPass
+        !name ||
+        !emailRegex.test(email) ||
+        !passwordRegex.test(password.currentPass)
       ) {
+        alert("Please enter valid data.");
+      } else {
+        // If validation passes, store data and navigate
         localStorage.setItem("userData", JSON.stringify(state.userData));
         localStorage.setItem("logedIn", false);
         const navigate = action.payload;
         navigate(`/login`);
-      } else {
-        alert("Please fill out all required fields with valid information.");
       }
     },
+
     login: (state, action) => {
       switch (action.payload.status) {
         case "email":
@@ -74,7 +83,7 @@ export const authenticationSlice = createSlice({
         // To reload the page >>
         window.location.href = "/";
       } else {
-        alert("Please fill out all required fields with valid information.");
+        alert("Please enter valid data.");
       }
     },
     editUserData: (state, action) => {

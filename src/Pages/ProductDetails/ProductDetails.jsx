@@ -32,6 +32,9 @@ export default function ProductDetails() {
   const [getCartItem, setGetCartItem] = useState();
   //  item.id == id it come from usePrams >>>
   const cartProduct = productsState.cartProducts.find((item) => item.id == id);
+  // Set Img Index >>
+  const [imgIndex, setImgIndex] = useState(0);
+
   // Get it in frist load >>
   useEffect(() => {
     if (cartProduct) {
@@ -63,6 +66,7 @@ export default function ProductDetails() {
       const inWish = productsState.wishProducts.some((i) => {
         return i.id == item.id;
       });
+
       if (item.id == id) {
         // << Start Stars Number
         let starsNum = [];
@@ -99,15 +103,20 @@ export default function ProductDetails() {
                   <Box className="lef-imgs-wrapper">
                     {item.imgs.map((img) => {
                       return (
-                        <Box key={img} className="img-wrapper">
-                          <img src={img} alt={item.name} />
+                        <Box
+                          key={img}
+                          className="img-wrapper"
+                          onClick={() => {
+                            setImgIndex(item.imgs.indexOf(img));
+                          }}>
+                          <img className="show" src={img} alt={item.name} />
                         </Box>
                       );
                     })}
                   </Box>
                   {/* Main img */}
                   <Box className="main-img">
-                    <img src={item.mainImg} alt="" />
+                    <img src={item.imgs[imgIndex]} alt={item.mainImg} />
                   </Box>
                 </Box>
                 {/* End Product Images //>> */}
@@ -320,7 +329,7 @@ export default function ProductDetails() {
         );
       }
     });
-  }, [productsState, getCartItem]);
+  }, [productsState, getCartItem, imgIndex]);
 
   return <Container>{productDetailsJsx}</Container>;
 }
