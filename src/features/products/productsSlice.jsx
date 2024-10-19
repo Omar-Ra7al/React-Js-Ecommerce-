@@ -92,6 +92,12 @@ export const productsSlice = createSlice({
       state.cartProducts = JSON.parse(localStorage.getItem("cartProducts"));
       const newUserQuantity = state.cartProducts.map((item) => {
         if (item.id == action.payload.id) {
+          if (
+            action.payload.status == "increase" &&
+            item.userQuantity == item.count
+          ) {
+            alert(item.userQuantity + " is the max quantity for this product");
+          }
           // Increase
           if (
             action.payload.status == "increase" &&
