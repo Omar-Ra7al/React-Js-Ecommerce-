@@ -29,7 +29,7 @@
   flex-wrap: wrap;
 
   img {
-    max-width: 50%;
+    width: 50%;
     height: 100%;
   }
   .slider-left {
@@ -50,9 +50,6 @@
       justify-content: center;
     }
     justify-content: center;
-    img {
-      width: 100%;
-    }
   }
   .slider-title {
     display: flex;

@@ -13,8 +13,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 // React imports
 import { useEffect, useMemo, useState } from "react";
 // React Router >>
-import { useParams } from "react-router-dom";
-import { Link } from "@mui/material";
+import { useParams, Link, useNavigate } from "react-router-dom";
 
 // Redux imports
 import { useSelector, useDispatch } from "react-redux";
@@ -59,6 +58,20 @@ export default function ProductDetails() {
   const decreaseQuantity = function (id) {
     dispatch(quantity({ status: "decrease", id: id }));
   };
+
+  // Check if the user loged in
+  const isHaveAccount = JSON.parse(localStorage.getItem("userData"));
+  const isLoggedIn = JSON.parse(localStorage.getItem("logedIn"));
+  const navigate = useNavigate();
+  function handleCheckout() {
+    if (!isHaveAccount) {
+      alert("You are supposed to have an account");
+    } else if (!isLoggedIn) {
+      alert("You are supposed to Login at frist");
+    } else {
+      navigate("/checkOut");
+    }
+  }
 
   // Jsx >>
   const productDetailsJsx = useMemo(() => {
@@ -160,7 +173,13 @@ export default function ProductDetails() {
                         +
                       </Button>
                     </Box>
-                    <Button variant="contained" className="buy-now">
+                    <Button
+                      variant="contained"
+                      className="buy-now"
+                      aria-label="buy-now"
+                      onClick={() => {
+                        handleCheckout();
+                      }}>
                       Buy Now
                     </Button>
                     <IconButton
