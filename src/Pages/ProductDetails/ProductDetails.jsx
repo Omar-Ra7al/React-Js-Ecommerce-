@@ -70,6 +70,7 @@ export default function ProductDetails() {
       alert("You are supposed to Login at frist");
     } else {
       navigate("/checkOut");
+      dispatch(addProduct({ status: "cart", id: id }));
     }
   }
 
@@ -178,7 +179,7 @@ export default function ProductDetails() {
                       className="buy-now"
                       aria-label="buy-now"
                       onClick={() => {
-                        handleCheckout();
+                        handleCheckout(id);
                       }}>
                       Buy Now
                     </Button>
