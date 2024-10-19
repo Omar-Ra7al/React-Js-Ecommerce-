@@ -24,7 +24,10 @@ export default function Footer() {
                   label="Enter your email"
                   placeholder="Enter your email"
                   className="email-input"></input>
-                <IconButton className="icon" color="secondary">
+                <IconButton
+                  aria-label="send"
+                  className="icon"
+                  color="secondary">
                   <SendIcon />
                 </IconButton>
               </Box>
@@ -94,14 +97,14 @@ export default function Footer() {
             </Typography>
             <Box className="download-app-imgs">
               <Box className="img-wrapper">
-                <img src={qr} alt="QR code" />
+                <img loading="lazy" src={qr} alt="QR code" />
               </Box>
               <Box className="right">
                 <Box className="img-wrapper">
-                  <img src={iphone} alt="iPhone" />
+                  <img loading="lazy" src={iphone} alt="iPhone" />
                 </Box>
                 <Box className="img-wrapper">
-                  <img src={googleplay} alt="Google Play" />
+                  <img loading="lazy" src={googleplay} alt="Google Play" />
                 </Box>
               </Box>
             </Box>

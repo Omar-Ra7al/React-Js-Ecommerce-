@@ -30,13 +30,12 @@ import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 // Images
-import HomeImg from "../../../public/assets/Images/Home/iphone14.png";
-// import HomeImg from "../../../public/assets/Images/Home/iphone14.png";
-import Jbl from "../../../public/assets/Images/Home/Jbl.png";
-import Ps5 from "../../../public/assets/Images/Home/ps5-slim.png";
-import Women from "../../../public/assets/Images/Home/women.png";
-import Gucci from "../../../public/assets/Images/Home/Gucci.png";
-import Amazon from "../../../public/assets/Images/Home/amazon.png";
+import HomeImg from "/assets/Images/Home/iphone14.png";
+import Jbl from "/assets/Images/Home/Jbl.png";
+import Ps5 from "/assets/Images/Home/ps5-slim.png";
+import Women from "/assets/Images/Home/women.png";
+import Gucci from "/assets/Images/Home/Gucci.png";
+import Amazon from "/assets/Images/Home/amazon.png";
 
 // React Router
 import { Link } from "react-router-dom";
@@ -86,20 +85,23 @@ export default function Home() {
       return (
         <Box key={item.id} className="product">
           <Box className="img-wrappere">
-            <img src={item.mainImg} alt="" />
+            <img loading="lazy" src={item.mainImg} alt="img" />
             <Box className="icons">
               <Box
                 className={`icon-wrapper ${inWish ? "inwish" : ""}`}
                 onClick={() => {
                   addProductToWish(item.id);
                 }}>
-                <IconButton>
+                <IconButton aria-label="wish">
                   <FavoriteBorderIcon className="icon" />
                 </IconButton>
               </Box>
 
               <Box className="icon-wrapper">
-                <IconButton component={Link} to={`/productDetails/${item.id}`}>
+                <IconButton
+                  aria-label="go to details page"
+                  component={Link}
+                  to={`/productDetails/${item.id}`}>
                   <RemoveRedEyeIcon className="icon" />
                 </IconButton>
               </Box>
@@ -158,20 +160,23 @@ export default function Home() {
       return (
         <Box key={item.id} className="product">
           <Box className="img-wrappere">
-            <img src={item.mainImg} alt="" />
+            <img loading="lazy" src={item.mainImg} alt="img" />
             <Box className="icons">
               <Box
                 className={`icon-wrapper ${inWish ? "inwish" : ""}`}
                 onClick={() => {
                   addProductToWish(item.id);
                 }}>
-                <IconButton>
+                <IconButton aria-label="wish">
                   <FavoriteBorderIcon className="icon" />
                 </IconButton>
               </Box>
 
               <Box className="icon-wrapper">
-                <IconButton component={Link} to={`/productDetails/${item.id}`}>
+                <IconButton
+                  aria-label="go to details page"
+                  component={Link}
+                  to={`/productDetails/${item.id}`}>
                   <RemoveRedEyeIcon className="icon" />
                 </IconButton>
               </Box>
@@ -259,12 +264,7 @@ export default function Home() {
                   <ArrowForwardIcon />
                 </Box>
               </Box>
-              <img
-                className="home-img"
-                src={HomeImg} // Replace with your image URL
-                alt="Description"
-                style={{ width: "50%", height: "auto" }} // Adjust styling as needed
-              />
+              <img className="home-img" src={HomeImg} alt="imgDescription" />
             </Box>
           </Grid>
         </Grid>
@@ -421,7 +421,7 @@ export default function Home() {
           <Button variant="contained">Buy Now !</Button>
         </Box>
         <Box className="img-wrapper">
-          <img src={Jbl} alt="" />
+          <img loading="lazy" src={Jbl} alt="imggbl" />
         </Box>
       </Box>
       {/* End Gbl Section 5 >> */}
@@ -456,14 +456,14 @@ export default function Home() {
               return (
                 <Box key={item.id} className="product">
                   <Box className="img-wrappere">
-                    <img src={item.mainImg} alt="" />
+                    <img loading="lazy" src={item.mainImg} alt="img" />
                     <Box className="icons">
                       <Box
                         className={`icon-wrapper ${inWish ? "inwish" : ""}`}
                         onClick={() => {
                           addProductToWish(item.id);
                         }}>
-                        <IconButton>
+                        <IconButton aria-label="wish">
                           <FavoriteBorderIcon className="icon" />
                         </IconButton>
                       </Box>
@@ -471,6 +471,7 @@ export default function Home() {
                       <Box className="icon-wrapper">
                         <IconButton
                           component={Link}
+                          aria-label="go to details page"
                           to={`/productDetails/${item.id}`}>
                           <RemoveRedEyeIcon className="icon" />
                         </IconButton>
@@ -549,7 +550,7 @@ export default function Home() {
           <Grid item xs={12} md={6}>
             <Box className="box-holder">
               <Box className="img-wrapper">
-                <img src={Ps5} alt="PS5" />
+                <img loading="lazy" src={Ps5} alt="imgPS5" />
                 <Box className="img-details">
                   <Typography className="title">PlayStation 5</Typography>
                   <Typography className="body">
@@ -566,7 +567,12 @@ export default function Home() {
             <Box className="box-holder right">
               {/* Upper Image */}
               <Box className="img-wrapper">
-                <img src={Women} alt="Women" className="women" />
+                <img
+                  loading="lazy"
+                  src={Women}
+                  alt="imgWomen"
+                  className="women"
+                />
                 <Box className="img-details">
                   <Typography className="title">Women’s Fashion</Typography>
                   <Typography className="body">
@@ -580,7 +586,7 @@ export default function Home() {
               <Box className="right-down">
                 {/* Image 1 */}
                 <Box className="img-wrapper">
-                  <img src={Gucci} alt="Gucci" />
+                  <img loading="lazy" src={Gucci} alt="imgGucci" />
                   <Box className="img-details">
                     <Typography className="title">Gucci Sale</Typography>
                     <Typography className="body">
@@ -592,7 +598,7 @@ export default function Home() {
 
                 {/* Image 2 */}
                 <Box className="img-wrapper">
-                  <img src={Amazon} alt="Amazon" />
+                  <img loading="lazy" src={Amazon} alt="imgAmazon" />
                   <Box className="img-details">
                     <Typography className="title">Amazon Deals</Typography>
                     <Typography className="body">
