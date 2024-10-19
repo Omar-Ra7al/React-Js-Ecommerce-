@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 2341,
     "name": "iPhone 16 Pro Max",
     "description": "**iPhone 16 Pro Max**: A cutting-edge smartphone with advanced performance, stunning display, and professional-grade camera system for an exceptional mobile experience.",
     "mainImg": "/assets/Products/iphone1.png",
@@ -20,7 +20,7 @@
     "category": "Electronics"
   },
   {
-    "id": 2,
+    "id": 290123,
     "name": "HP Spectre x360 Laptop",
     "description": "A high-performance laptop with a sleek design, featuring a powerful Intel processor, 16GB RAM, and a 512GB SSD.",
     "mainImg": "/assets/Products/lap3.png",
@@ -62,7 +62,7 @@
   },
 
   {
-    "id": 10,
+    "id": 1210,
     "name": "Hoody",
     "description": "Comfortable and stylish hoody for casual wear.",
     "mainImg": "/assets/Products/hoody1.png",
@@ -82,7 +82,7 @@
     "category": "Men’s Fashion"
   },
   {
-    "id": 11,
+    "id": 2311,
     "name": "Gaming Keyboard",
     "description": "High-performance gaming keyboard with customizable RGB lighting.",
     "mainImg": "/assets/Products/keyboard2.png",
@@ -102,7 +102,7 @@
     "category": "Electronics"
   },
   {
-    "id": 7,
+    "id": 7432,
     "name": "Airpods Pro",
     "description": "High-quality wireless earphones with superior sound and noise cancellation for an immersive experience.",
     "mainImg": "/assets/Products/airpods.png",
@@ -281,7 +281,7 @@
     "category": "Men’s Fashion"
   },
   {
-    "id": 3,
+    "id": 302,
     "name": "iPhone 16 Pro Max",
     "description": "**iPhone 16 Pro Max**: A cutting-edge smartphone with advanced performance, stunning display, and professional-grade camera system for an exceptional mobile experience.",
     "mainImg": "/assets/Products/iphone2.png",
@@ -301,7 +301,7 @@
     "category": "Electronics"
   },
   {
-    "id": 5,
+    "id": 115,
     "name": "iPhone 16 Pro Max",
     "description": "**iPhone 16 Pro Max**: A cutting-edge smartphone with advanced performance, stunning display, and professional-grade camera system for an exceptional mobile experience.",
     "mainImg": "/assets/Products/iphone3.png",
@@ -321,7 +321,7 @@
     "category": "Electronics"
   },
   {
-    "id": 6,
+    "id": 126,
     "name": "Electric Kettle",
     "description": "A high-performance electric kettle for fast and efficient boiling, featuring stainless steel construction.",
     "mainImg": "/assets/Products/lap1.png",
@@ -341,7 +341,7 @@
     "category": "Electronics"
   },
   {
-    "id": 9,
+    "id": 999,
     "name": "Keyboard",
     "description": "Soft and cuddly teddy bear for children.",
     "mainImg": "/assets/Products/keyboard.png",
@@ -403,7 +403,7 @@
   },
 
   {
-    "id": 4,
+    "id": 1114,
     "name": "HP Spectre x360 Laptop",
     "description": "A high-performance laptop with a sleek design, featuring a powerful Intel processor, 16GB RAM, and a 512GB SSD.",
     "mainImg": "/assets/Products/lap2.png",
@@ -424,7 +424,7 @@
   },
 
   {
-    "id": 13,
+    "id": 1113,
     "name": "Gaming Keyboard",
     "description": "High-performance gaming headphones with surround sound.",
     "mainImg": "/assets/Products/keyboard3.png",

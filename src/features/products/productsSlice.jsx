@@ -118,10 +118,15 @@ export const productsSlice = createSlice({
     wishTocart: (state) => {
       state.cartProducts = [
         ...state.cartProducts,
-        ...state.wishProducts.map((product) => ({
-          ...product,
-          userQuantity: 1,
-        })),
+        ...state.wishProducts
+          .filter(
+            (product) =>
+              !state.cartProducts.some((cartItem) => cartItem.id === product.id) // Check if product is not in the cart
+          )
+          .map((product) => ({
+            ...product,
+            userQuantity: 1, // Add or modify the key
+          })),
       ];
       // update local storage
       localStorage.setItem("cartProducts", JSON.stringify(state.cartProducts));
