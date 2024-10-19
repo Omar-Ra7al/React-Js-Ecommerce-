@@ -88,7 +88,6 @@ export const productsSlice = createSlice({
         state.wishProducts = filterdArr;
       }
     },
-
     quantity: (state, action) => {
       state.cartProducts = JSON.parse(localStorage.getItem("cartProducts"));
       const newUserQuantity = state.cartProducts.map((item) => {
@@ -116,6 +115,11 @@ export const productsSlice = createSlice({
       localStorage.setItem("cartProducts", JSON.stringify(newUserQuantity));
       state.cartProducts = newUserQuantity;
     },
+    wishTocart: (state) => {
+      state.cartProducts = [state.cartProducts, ...state.wishProducts];
+      // update local storage
+      localStorage.setItem("cartProducts", JSON.stringify(state.cartProducts));
+    },
   },
   // extraReducers >>
   extraReducers: (builder) => {
@@ -125,6 +129,7 @@ export const productsSlice = createSlice({
   },
 });
 
-export const { addProduct, quantity, removeProduct } = productsSlice.actions;
+export const { addProduct, quantity, removeProduct, wishTocart } =
+  productsSlice.actions;
 
 export default productsSlice.reducer;

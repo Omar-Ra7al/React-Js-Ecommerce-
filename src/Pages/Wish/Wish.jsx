@@ -20,6 +20,7 @@ import { useSelector, useDispatch } from "react-redux";
 import {
   addProduct,
   removeProduct,
+  wishTocart,
 } from "../../features/products/productsSlice";
 
 // Image import (if needed, add it here)
@@ -33,12 +34,14 @@ export default function Wish() {
   const addProductToCart = function (id) {
     dispatch(addProduct({ status: "cart", id: id }));
   };
-
   const addProductToWish = function (id) {
     dispatch(addProduct({ status: "wish", id: id }));
   };
   const removeWishProduct = function (id) {
     dispatch(removeProduct({ status: "wish", id: id }));
+  };
+  const addAllToCart = function () {
+    dispatch(wishTocart());
   };
 
   // Wish Jsx >>
@@ -262,7 +265,14 @@ export default function Wish() {
             WishList ({wishProducts.length})
           </Typography>
           <Box className="slide-icons">
-            <Button variant="outlined">Move All To Bag</Button>
+            <Button
+              variant="outlined"
+              aria-label="add all to bag"
+              onClick={() => {
+                addAllToCart();
+              }}>
+              Move All To Bag
+            </Button>
           </Box>
         </Box>
         {/* Title */}
@@ -277,7 +287,9 @@ export default function Wish() {
             <Typography className="d-title">Just for u</Typography>
           </Box>
           <Box className="slide-icons">
-            <Button variant="outlined">See All</Button>
+            <Button variant="outlined" aria-label="see all">
+              See All
+            </Button>
           </Box>
         </Box>
         <Box className="products-wrapper">{justForUJsx}</Box>
