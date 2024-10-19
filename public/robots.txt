@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /checkout/
+Allow: /products/
+Sitemap: https://react-ecommerce10.vercel.app/
