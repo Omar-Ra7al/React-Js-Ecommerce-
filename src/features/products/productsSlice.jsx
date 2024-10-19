@@ -117,7 +117,6 @@ export const productsSlice = createSlice({
     },
     wishTocart: (state) => {
       state.cartProducts = [
-        ...state.cartProducts,
         ...state.wishProducts
           .filter(
             (product) =>
@@ -127,6 +126,7 @@ export const productsSlice = createSlice({
             ...product,
             userQuantity: 1, // Add or modify the key
           })),
+        ...state.cartProducts,
       ];
       // update local storage
       localStorage.setItem("cartProducts", JSON.stringify(state.cartProducts));

@@ -109,7 +109,7 @@ export default function Cart() {
           {/* << Product Quantity >> */}
           {/* _________________________________________________ */}
           {/* << Sub Total >> */}
-          <TableCell>${item.price}</TableCell>
+          <TableCell>${(item.price * item.userQuantity).toFixed(2)}</TableCell>
           {/* << Sub Total >> */}
           {/* _________________________________________________ */}
           {/* << Delete Product >> */}
