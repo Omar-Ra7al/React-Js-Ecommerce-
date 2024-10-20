@@ -85,7 +85,7 @@ export default function Swiper({
               slideRight();
             }}
             className="right">
-            <IconButton>
+            <IconButton aria-label="slide right">
               <ArrowForwardIcon />
             </IconButton>
           </span>
@@ -94,7 +94,7 @@ export default function Swiper({
               slideLeft();
             }}
             className="left">
-            <IconButton>
+            <IconButton aria-label="slide left">
               <ArrowBackIcon />
             </IconButton>
           </span>
