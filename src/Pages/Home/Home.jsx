@@ -285,7 +285,7 @@ export default function Home() {
   return (
     <Container>
       {/* << Start Categorey List  Section 1 */}
-      <Box className="section">
+      <Box className="section home-main">
         <Grid container spacing={2}>
           <Grid item xs={12} md={3}>
             <Box className="sidebar">
