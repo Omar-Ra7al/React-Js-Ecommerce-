@@ -81,7 +81,12 @@
   }
 }
 /* End Tody's Sales Section //>>  */
-
+.sales,
+.our-products {
+  .products-wrapper {
+    min-width: 100%;
+  }
+}
 /* << Start Categories Section  */
 /* Global */
 /* End Categories Section //>> */

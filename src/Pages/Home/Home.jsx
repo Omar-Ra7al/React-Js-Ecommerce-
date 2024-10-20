@@ -37,12 +37,13 @@ import Women from "/assets/Images/Home/women.png";
 import Gucci from "/assets/Images/Home/Gucci.png";
 import Amazon from "/assets/Images/Home/amazon.png";
 
+import Swiper from "../../Vendores/Swiper/Swiper";
+
 // React Router
 import { Link } from "react-router-dom";
 // Redux
 import { useSelector, useDispatch } from "react-redux";
 import { addProduct } from "../../features/products/productsSlice";
-
 export default function Home() {
   // Redux >>
   const productsState = useSelector((state) => state.products);
@@ -72,9 +73,131 @@ export default function Home() {
     });
   };
 
-  const discountProducts = productsFilter("discount", true)
-    .slice(0, 4)
-    // Todo in swipe add more in value number
+  const discountProducts = productsFilter("discount", true).map((item) => {
+    const inWish = productsState.wishProducts.some((i) => {
+      return i.id == item.id;
+    });
+    const inCart = productsState.cartProducts.some((i) => {
+      return i.id == item.id;
+    });
+    return (
+      <Box key={item.id} className="product">
+        <Box className="img-wrappere">
+          <img loading="lazy" src={item.mainImg} alt="img" />
+          <Box className="icons">
+            <Box
+              className={`icon-wrapper ${inWish ? "inwish" : ""}`}
+              onClick={() => {
+                addProductToWish(item.id);
+              }}>
+              <IconButton aria-label="wish">
+                <FavoriteBorderIcon className="icon" />
+              </IconButton>
+            </Box>
+
+            <Box className="icon-wrapper">
+              <IconButton
+                aria-label="go to details page"
+                component={Link}
+                to={`/productDetails/${item.id}`}>
+                <RemoveRedEyeIcon className="icon" />
+              </IconButton>
+            </Box>
+            <span className="discount-value">
+              {item.discount.discountValue}%
+            </span>
+          </Box>
+        </Box>
+        {products[1].id == item.id ? (
+          <Box className={`add-cart ${inCart ? "incart" : ""}`}>
+            <Button
+              variant="contained"
+              onClick={() => {
+                addProductToCart(item.id);
+              }}>
+              {!inCart ? "Add To Cart" : "IN CART"}
+              <ShoppingCartIcon />
+            </Button>
+          </Box>
+        ) : (
+          ""
+        )}
+        <Box className="content">
+          <Typography className="title">{item.name}</Typography>
+          <Box className="prices">
+            <Typography className="new">
+              $
+              {(item.price * (1 - item.discount.discountValue / 100)).toFixed(
+                2
+              )}
+            </Typography>
+            <Typography className="old">${item.price}</Typography>
+          </Box>
+          <Box className="rate">
+            <Box className="stars">
+              <GradeIcon className="star" />
+              <GradeIcon className="star" />
+              <GradeIcon className="star" />
+              <GradeIcon className="star" />
+              <GradeIcon className="star" />
+            </Box>
+            <Typography className="count">({item.count})</Typography>
+          </Box>
+        </Box>
+      </Box>
+    );
+  });
+  const bestSelling = productsFilter("bestSelling", 4.7).map((item) => {
+    const inWish = productsState.wishProducts.some((i) => {
+      return i.id == item.id;
+    });
+
+    return (
+      <Box key={item.id} className="product">
+        <Box className="img-wrappere">
+          <img loading="lazy" src={item.mainImg} alt="img" />
+          <Box className="icons">
+            <Box
+              className={`icon-wrapper ${inWish ? "inwish" : ""}`}
+              onClick={() => {
+                addProductToWish(item.id);
+              }}>
+              <IconButton aria-label="wish">
+                <FavoriteBorderIcon className="icon" />
+              </IconButton>
+            </Box>
+
+            <Box className="icon-wrapper">
+              <IconButton
+                aria-label="go to details page"
+                component={Link}
+                to={`/productDetails/${item.id}`}>
+                <RemoveRedEyeIcon className="icon" />
+              </IconButton>
+            </Box>
+          </Box>
+        </Box>
+        <Box className="content">
+          <Typography className="title">{item.name}</Typography>
+          <Box className="prices">
+            <Typography className="new">${item.price}</Typography>
+          </Box>
+          <Box className="rate">
+            <Box className="stars">
+              <GradeIcon className="star" />
+              <GradeIcon className="star" />
+              <GradeIcon className="star" />
+              <GradeIcon className="star" />
+              <GradeIcon className="star" />
+            </Box>
+            <Typography className="count">({item.count})</Typography>
+          </Box>
+        </Box>
+      </Box>
+    );
+  });
+  const allProducts = productsFilter()
+    .slice(0, 16)
     .map((item) => {
       const inWish = productsState.wishProducts.some((i) => {
         return i.id == item.id;
@@ -99,18 +222,24 @@ export default function Home() {
 
               <Box className="icon-wrapper">
                 <IconButton
-                  aria-label="go to details page"
                   component={Link}
+                  aria-label="go to details page"
                   to={`/productDetails/${item.id}`}>
                   <RemoveRedEyeIcon className="icon" />
                 </IconButton>
               </Box>
-              <span className="discount-value">
-                {item.discount.discountValue}%
-              </span>
+
+              {/* Check if item include discount frist */}
+              {item.discount.haveDiscount ? (
+                <span className="discount-value">
+                  {item.discount.discountValue}%
+                </span>
+              ) : (
+                ""
+              )}
             </Box>
           </Box>
-          {item.id == 2 ? (
+          {products[2].id == item.id ? (
             <Box className={`add-cart ${inCart ? "incart" : ""}`}>
               <Button
                 variant="contained"
@@ -133,7 +262,11 @@ export default function Home() {
                   2
                 )}
               </Typography>
-              <Typography className="old">${item.price}</Typography>
+              {item.discount.haveDiscount ? (
+                <Typography className="old">${item.price}</Typography>
+              ) : (
+                ""
+              )}
             </Box>
             <Box className="rate">
               <Box className="stars">
@@ -149,59 +282,6 @@ export default function Home() {
         </Box>
       );
     });
-  const bestSelling = productsFilter("bestSelling", 4.7)
-    .slice(0, 4)
-    // Todo in swipe add more in value number
-    .map((item) => {
-      const inWish = productsState.wishProducts.some((i) => {
-        return i.id == item.id;
-      });
-
-      return (
-        <Box key={item.id} className="product">
-          <Box className="img-wrappere">
-            <img loading="lazy" src={item.mainImg} alt="img" />
-            <Box className="icons">
-              <Box
-                className={`icon-wrapper ${inWish ? "inwish" : ""}`}
-                onClick={() => {
-                  addProductToWish(item.id);
-                }}>
-                <IconButton aria-label="wish">
-                  <FavoriteBorderIcon className="icon" />
-                </IconButton>
-              </Box>
-
-              <Box className="icon-wrapper">
-                <IconButton
-                  aria-label="go to details page"
-                  component={Link}
-                  to={`/productDetails/${item.id}`}>
-                  <RemoveRedEyeIcon className="icon" />
-                </IconButton>
-              </Box>
-            </Box>
-          </Box>
-          <Box className="content">
-            <Typography className="title">{item.name}</Typography>
-            <Box className="prices">
-              <Typography className="new">${item.price}</Typography>
-            </Box>
-            <Box className="rate">
-              <Box className="stars">
-                <GradeIcon className="star" />
-                <GradeIcon className="star" />
-                <GradeIcon className="star" />
-                <GradeIcon className="star" />
-                <GradeIcon className="star" />
-              </Box>
-              <Typography className="count">({item.count})</Typography>
-            </Box>
-          </Box>
-        </Box>
-      );
-    });
-
   return (
     <Container>
       {/* << Start Categorey List  Section 1 */}
@@ -282,18 +362,21 @@ export default function Home() {
 
         <Box className="details">
           <Typography className="title-details">Flash Sales</Typography>
-          <Box className="slide-icons">
-            <ArrowBackIcon />
-            <ArrowForwardIcon />
-          </Box>
         </Box>
         {/* Product >> */}
         <Box className="sales">
-          <Box className="products-wrapper">
-            {/* <<<<<<<<< Jsx  >>>>>>>>  */}
-            {discountProducts}
-            {/* <<<<<<<<< Jsx  >>>>>>>>  */}
-          </Box>
+          <Swiper autoSlide={true} slideTime={5000}>
+            <Box className="products-wrapper">
+              {/* <<<<<<<<< Jsx  >>>>>>>>  */}
+              {discountProducts.slice(0, 4)}
+              {/* <<<<<<<<< Jsx  >>>>>>>>  */}
+            </Box>
+            <Box className="products-wrapper">
+              {/* <<<<<<<<< Jsx  >>>>>>>>  */}
+              {discountProducts.slice(4, 8)}
+              {/* <<<<<<<<< Jsx  >>>>>>>>  */}
+            </Box>
+          </Swiper>
           <Box className="view-all">
             <Button variant="contained" color="error">
               <Link className="link" to={"/products"}>
@@ -373,7 +456,7 @@ export default function Home() {
         </Box>
         <Box className="products-wrapper">
           {/* <<<<<<<<< Jsx  >>>>>>>>  */}
-          {bestSelling}
+          {bestSelling.slice(0, 4)}
           {/* <<<<<<<<< Jsx  >>>>>>>>  */}
         </Box>
       </Box>
@@ -437,100 +520,18 @@ export default function Home() {
           <Typography className="title-details">
             Explore Our Products
           </Typography>
-          <Box className="slide-icons">
-            <ArrowBackIcon />
-            <ArrowForwardIcon />
-          </Box>
         </Box>
-        <Box className="products-wrapper">
-          {/* <<<<<<<<< Jsx  >>>>>>>>  */}
-          {productsFilter()
-            .slice(0, 8)
-            .map((item) => {
-              const inWish = productsState.wishProducts.some((i) => {
-                return i.id == item.id;
-              });
-              const inCart = productsState.cartProducts.some((i) => {
-                return i.id == item.id;
-              });
-              return (
-                <Box key={item.id} className="product">
-                  <Box className="img-wrappere">
-                    <img loading="lazy" src={item.mainImg} alt="img" />
-                    <Box className="icons">
-                      <Box
-                        className={`icon-wrapper ${inWish ? "inwish" : ""}`}
-                        onClick={() => {
-                          addProductToWish(item.id);
-                        }}>
-                        <IconButton aria-label="wish">
-                          <FavoriteBorderIcon className="icon" />
-                        </IconButton>
-                      </Box>
-
-                      <Box className="icon-wrapper">
-                        <IconButton
-                          component={Link}
-                          aria-label="go to details page"
-                          to={`/productDetails/${item.id}`}>
-                          <RemoveRedEyeIcon className="icon" />
-                        </IconButton>
-                      </Box>
-
-                      {/* Check if item include discount frist */}
-                      {item.discount.haveDiscount ? (
-                        <span className="discount-value">
-                          {item.discount.discountValue}%
-                        </span>
-                      ) : (
-                        ""
-                      )}
-                    </Box>
-                  </Box>
-                  {item.id == 2 ? (
-                    <Box className={`add-cart ${inCart ? "incart" : ""}`}>
-                      <Button
-                        variant="contained"
-                        onClick={() => {
-                          addProductToCart(item.id);
-                        }}>
-                        {!inCart ? "Add To Cart" : "IN CART"}
-                        <ShoppingCartIcon />
-                      </Button>
-                    </Box>
-                  ) : (
-                    ""
-                  )}
-                  <Box className="content">
-                    <Typography className="title">{item.name}</Typography>
-                    <Box className="prices">
-                      <Typography className="new">
-                        $
-                        {(
-                          item.price *
-                          (1 - item.discount.discountValue / 100)
-                        ).toFixed(2)}
-                      </Typography>
-                      {item.discount.haveDiscount ? (
-                        <Typography className="old">${item.price}</Typography>
-                      ) : (
-                        ""
-                      )}
-                    </Box>
-                    <Box className="rate">
-                      <Box className="stars">
-                        <GradeIcon className="star" />
-                        <GradeIcon className="star" />
-                        <GradeIcon className="star" />
-                        <GradeIcon className="star" />
-                        <GradeIcon className="star" />
-                      </Box>
-                      <Typography className="count">({item.count})</Typography>
-                    </Box>
-                  </Box>
-                </Box>
-              );
-            })}
+        <Box className="our-products">
+          <Swiper autoSlide={true} slideTime={5000}>
+            <Box className="products-wrapper">
+              {/* <<<<<<<<< Jsx  >>>>>>>>  */}
+              {allProducts.slice(0, 8)}
+            </Box>
+            <Box className="products-wrapper">
+              {/* <<<<<<<<< Jsx  >>>>>>>>  */}
+              {allProducts.slice(8, 16)}
+            </Box>
+          </Swiper>
         </Box>
       </Box>
       {/* End Our Products Section 6 //>>  */}
